@@ -51,103 +51,77 @@ nav a {
 	font-size: 1.3125em;
 }
 
-.nav-up {
-    -webkit-transform: translateY(-299px); -webkit-transition: transform 200ms linear;
-}
-
 #nav-toggle { 
 	display: inline-block;
+	cursor: pointer; 
+	padding: 10px 35px 16px 0px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-	cursor: pointer;
-	border-radius: 1px;
-	height: 5px;
-	width: 35px;
-	background-color: #A0AF9C;
-	position: absolute;
-	display: block;
-	content: '';
-}
-#nav-toggle span:before {
-  top: -10px; 
-}
-#nav-toggle span:after {
-  bottom: -10px;
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
-}
-#nav-toggle.active span {
-  background-color: transparent;
-}
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+	span, span:before, span:after {
+		cursor: pointer;
+		border-radius: 1px;
+		height: 5px;
+		width: 35px;
+		background-color: #A0AF9C;
+		position: absolute;
+		display: block;
+		content: '';
+		transition: all 500ms ease-in-out;
+	}
+	span:before {
+		top: -10px; 
+	}
+	span:after {
+		bottom: -10px;
+	}
+	&.active span {
+		background-color: transparent;
+		&:before {
+			top: 0;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		&:after {
+			bottom: 0;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+	}
 }
 
 .nav-list {
 	display: none;
 }
 
-.close {
-	color: #fff;
-	font-size: 2rem;
-	display: inline-block;
-	/* Safari */
-	-webkit-transform: rotate(-45deg);
-	
-	/* Firefox */
-	-moz-transform: rotate(-45deg);
-	
-	/* IE */
-	-ms-transform: rotate(-45deg);
-	
-	/* Opera */
-	-o-transform: rotate(-45deg);
-}
-
 .project-description-panel {
 	background-color: #A0AF9C;
 	color: #FFF4E3;
-	padding: 0.9375em;	
-}
-
-.project-description-panel h1 {
-	font-size: 6em;
-	font-size: 9vw;
-}
-.project-description-panel h1:first-child {
-	margin-top: 0;
-}
-
-.project-description-panel .down-arrow {
-	position: absolute;
-	bottom: 0.9375em;
-	left: 50%;
-	margin-left: -8px;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-.project-description-panel .down-arrow span {
-	width: 16px;
-	height: 16px;
-	border-bottom: #FFF4E3 4px solid;
-	border-left: #FFF4E3 4px solid;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	display: inline-block;
-	cursor: pointer;
+	padding: 0.9375em;
+	h1 {
+		font: {
+			size: 6em;
+			size: 9vw;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	.down-arrow {
+		position: absolute;
+		bottom: 0.9375em;
+		left: 50%;
+		margin-left: -8px;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		span {
+			width: 16px;
+			height: 16px;
+			border-bottom: #FFF4E3 4px solid;
+			border-left: #FFF4E3 4px solid;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			display: inline-block;
+			cursor: pointer;
+		}
+	}
 }
 
 .subtitle {
