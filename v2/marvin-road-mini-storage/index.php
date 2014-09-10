@@ -11,18 +11,15 @@
 	<?php include("../includes/nav.php"); ?>
 	
 	<div class="project-description-panel">
-		<h1>Malibu Boats</h1>
-		<p><strong>Project:</strong> Malibu Boats Brochure<br />
-		<strong>Role:</strong> Art Director / Designer</p>
+		<h1>Marvin Road Mini Storage</h1>
+		<p><strong>Project:</strong> Logo<br />
+		<strong>Role:</strong> Designer</p>
 		<div class="floating down-arrow"><span></span></div>
 	</div>
 	
 	<section class="project airstream">
-		<img class="project-image" src="http://herseydesigns.com/images/bg_images/malibu1.jpg" alt="Airstream" />
-		<img class="project-image" src="http://herseydesigns.com/images/bg_images/malibu2.jpg" alt="Airstream" />
-		<img class="project-image" src="http://herseydesigns.com/images/bg_images/malibu3.jpg" alt="Airstream" />
-		<img class="project-image" src="http://herseydesigns.com/images/bg_images/malibuad1.jpg" alt="Airstream" />
-		<img class="project-image" src="http://herseydesigns.com/images/bg_images/malibuad2.jpg" alt="Airstream" />
+		<img class="project-image" src="../images/mrms-logo.jpg" alt="Airstream" />
+		<img class="project-image" src="http://herseydesigns.com/images/bg_images/mrms1.jpg" alt="Airstream" />
 	</section>
 	
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

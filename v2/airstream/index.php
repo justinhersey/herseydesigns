@@ -12,7 +12,6 @@
 	
 	<div class="project-description-panel">
 		<h1>Airstream</h1>
-		<p>This is a description about the project with Airstream and the new Basecamp partnership with Nissan.</p>
 		<p><strong>Project:</strong> Basecamp Brochure<br />
 		<strong>Role:</strong> Designer</p>
 		<div class="floating down-arrow"><span></span></div>

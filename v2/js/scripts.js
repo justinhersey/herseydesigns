@@ -14,7 +14,6 @@ function resizeCover(elem) {
 		viewportHeight = viewportWidthHeight.height;
 	
 	$(elem).css({
-		'width'		:		viewportWidth,
 		'height'	:		viewportHeight
 	});
 }
