@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1"><link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+	<?php include("../includes/fonts.php"); ?>
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 </head>
 <body>

@@ -18,6 +18,23 @@ function resizeCover(elem) {
 	});
 }
 
+function navToggle() {
+	$( "#nav-toggle" ).on('touchstart click', function(e) {
+		var navList = $('.nav-list');
+		if (!navList.is(':animated')) {
+			$(this).toggleClass( "active" );
+			navList.slideToggle();
+		}
+		navList.find('li').each(function(i) {
+			var $this = $(this);
+			setTimeout(function() {
+				$this.addClass('animated fadeInRight'); 
+			}, 500);
+		});
+		e.preventDefault();
+	});
+}
+
 function nav() {
 	// Hide Header on on scroll down
 	var didScroll,

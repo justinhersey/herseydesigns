@@ -1,10 +1,11 @@
+<?php $thisPage="Marvin Road Mini Storage"; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+	<?php include("../includes/fonts.php"); ?>
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 </head>
 <body>
 
@@ -26,24 +27,16 @@
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			//nav();
 			resizeCover('.project-description-panel');
 			// Listen for orientation changes
 			window.addEventListener("orientationchange", function() {
 				resizeCover('.project-description-panel');
 			}, false);
+			navToggle();
 			$('.project-description-panel').find('.down-arrow').on('touchstart click', function(e) {
 				$('html, body').animate({
     				scrollTop: $('.project-description-panel').next().offset().top
 				}, 500);
-				e.preventDefault();
-			});
-			$( "#nav-toggle" ).on( "touchstart click", function(e) {
-				var navList = $('.nav-list');
-				if (!navList.is(':animated')) {
-					$( this ).toggleClass( "active" );
-					navList.slideToggle();
-				}
 				e.preventDefault();
 			});
 		});
