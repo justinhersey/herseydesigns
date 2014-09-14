@@ -1,3 +1,4 @@
+<?php $thisPage="Smith Action Optics"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +18,7 @@
 		<div class="floating down-arrow"><span></span></div>
 	</div>
 	
-	<section class="project airstream">
+	<section class="project">
 		<img class="project-image" src="http://herseydesigns.com/images/bg_images/smith1.jpg" alt="Airstream" />
 		<img class="project-image" src="http://herseydesigns.com/images/bg_images/smith2.jpg" alt="Airstream" />
 		<img class="project-image" src="http://herseydesigns.com/images/bg_images/smith3.jpg" alt="Airstream" />

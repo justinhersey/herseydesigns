@@ -34,17 +34,20 @@ nav {
 		color: $textColor;
 		text-decoration: none;
 		font: {
-			family: 'Open-Sans', sans-serif;
+			family: 'Open Sans', sans-serif;
 			weight: 300;
 			size: 1.125em;
 		}
 	}
 	.active {
 		a {
-			color: lighten($textColor, 20%);
+			color: $accentColor;
 			font: {
+				family: "Roboto Slab", sans-serif;
 				weight: 700;
 			}
+			border-left: $accentColor 2px solid;
+			padding-left: 4px;
 		}
 	}
 }
@@ -54,15 +57,7 @@ nav > ul > li {
 	line-height: 1.96875em;
 }
 
-nav a {
-	color: #887A6D;
-	text-decoration: none;
-	font-family: 'Open-Sans', sans-serif;
-	font-weight: 300;
-	font-size: 1.125em;
-}
-
-#nav-toggle { 
+.nav-toggle { 
 	display: inline-block;
 	cursor: pointer; 
 	padding: 10px 35px 16px 0px;
@@ -70,7 +65,7 @@ nav a {
 	span, span:before, span:after {
 		cursor: pointer;
 		border-radius: 1px;
-		height: 5px;
+		height: 3px;
 		width: 35px;
 		background-color: #A0AF9C;
 		position: absolute;
