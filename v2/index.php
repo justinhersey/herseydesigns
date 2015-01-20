@@ -2,19 +2,20 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="build/css/stylesheet.css" rel="stylesheet" type="text/css">
 	<?php include("includes/fonts.php"); ?>
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
     <!--<script>document.cookie='resolution='+480+'; path=/';</script>-->
 </head>
 <body>
 	<?php include("includes/nav.php"); ?>
-	<section class="project airstream">
-		<img class="project-image" src="http://herseydesigns.com/images/bg_images/bgCorn.jpg" alt="Airstream" />
-	</section>
+	<div>
+		<img class="weather-icon" src="build/images/sunny.svg" alt="sunny" />
+		<p class="weather-forecast">Sunny.</p>
+	</div>
 	
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="build/js/scripts.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			//nav();
